@@ -1,6 +1,6 @@
 ### Theory
 
-Intrusion Prevention Systems (IPS) are security devices that monitor network traffic for signs of malicious activity and prevent those activities from succeeding. IPS work by analyzing network traffic in real-time and looking for known attack patterns, unusual traffic behavior, or other signs of malicious activity. When an attack is detected, the IPS can take action to block or prevent the attack, thus protecting the network and its resources.
+Intrusion Prevention Systems (IPS) are security devices that monitor network traffic for signs of malicious activity and prevent those activities from succeeding. IPS works by analyzing network traffic in real-time and looking for known attack patterns, unusual traffic behavior, or other signs of malicious activity. When an attack is detected, the IPS can take action to block or prevent the attack, thus protecting the network and its resources.
 
 One example of an IPS is Cisco's Firepower IPS, which uses a combination of signature-based detection and machine learning techniques to identify and block attacks in real-time. The Firepower IPS can detect and prevent a wide range of network-based attacks, including malware infections, DDoS attacks, and attempts to exploit known vulnerabilities in network devices.
 
@@ -12,11 +12,9 @@ A firewall is a network security system that monitors and controls incoming and 
 
 For example, imagine you have a computer network in your office that contains sensitive financial data. To protect this data, you install a firewall at the entrance to your network. The firewall is configured to block any incoming traffic that is not authorized, based on pre-established rules.
 
-For instance, you can set up rules in the firewall to allow only specific types of traffic from certain IP addresses or domains. You might allow incoming traffic on port 80 for web
+You can set up rules in the firewall to allow only specific types of traffic from certain IP addresses or domains. You might allow incoming traffic on port 80 for web browsing, but block traffic on port 25, which is used for email. You can also configure the firewall to block certain types of traffic based on protocols or keywords.
 
-browsing, but block traffic on port 25, which is used for email. You can also configure the firewall to block certain types of traffic based on protocols or keywords.
-
-In this scenario, if an attacker attempts to access your network by sending unauthorized traffic, the firewall will detect the intrusion and block the traffic based on its predefined rules. This can help to prevent data breaches, denial-of-service (DoS) attacks, malware infections, and other types of cyber attacks.
+In this scenario, if an attacker attempts to access your network by sending unauthorized traffic, the firewall will detect the intrusion and block the traffic based on its predefined rules. This can help prevent data breaches, denial-of-service (DoS) attacks, malware infections, and other types of cyber attacks.
 
 Firewalls can be either hardware-based or software-based, and they can be implemented in a variety of network environments, such as on-premise, cloud, or hybrid infrastructures. Overall, the firewall is an essential component of network security, providing a first line of defense against cyber threats.
 
