@@ -1,32 +1,24 @@
 ### Procedure
 
-1. Student need to copy the command(“configure terminal”) by single clicking it  and paste in the terminal.
+1. In this experiment, you will learn how to configure a firewall to block traffic from specific IP address that is sending malicious packets to a server.
 
-2. Observe entering into the configuration mode of the firewall.
+2. Enter the configuration mode of the firewall by typing the following command:
+    - configure terminal
 
-3. Copy the command(“show interface INTERFACE_NAME”) paste in the terminal.
+3. Get the interface information of the server which is in interface. Try to find the IP address of the server using the following command:
+    - show interface INTERFACE_NAME
 
-4. Change the “INTERFACE_NAME” to the interface name which is given.
+4. Access lists are a set of rules that are used to filter traffic. They are used to control the traffic that is allowed to pass through a router or a firewall. Access lists are used to filter traffic based on the source and destination IP addresses, source and destination ports, and protocol type. In this experiment, you will be using access lists to block traffic from specific ports from a server to a client.
 
-5. Observe the interface information and the IP address of the server.
+5. Get the access list information of the firewall using the following command:
+    - show access-lists
 
-6. Copy the command(“show interface INTERFACE_NAME”) paste in the terminal and click enter.
+6. Access lists are a set of rules that are used to filter traffic. Modify the access list to block and allow traffic from specific ports from a server to a client. Towards the right side of this experiment you will see a list of packets. The packets are sent from a client to a server. The packets hold an IP address and it's packet content. Click on the packet to view the complete packet content and decide which packets to block and allow based on the packet content. Malicious packets usually hold SQL Injection code or XSS scripts or Bash Scripts. You can block these packets by blocking the IP Address from which the packets are sent. Use the below commands to do so.
 
-7. Observe the access list information of the firewall.
+Use the following command to block traffic of tcp packets from a specific Client IP Address to the server:
+    - access-list block-packet deny tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS
 
-8. Copy the command(“access-list block-packet deny tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS”) paste in the terminal.
+7. Use the following command to allow traffic of tcp packets from a specific port to the server:
+    - access-list allow-packet allow tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS
 
-9. Change the SERVER_IP_ADDRESS to ip address which you can see after running the second command and CLIENT_IP_ADDRESS to the client ip address that you want to block traffic which the student can see on the right side.
-
-10. Press “ENTER’ to observe the simulation.
-
-11. Copy the command(“access-list block-packet deny tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS”) paste in the terminal.
-
-12. Change the SERVER_IP_ADDRESS to ip address which you can see after running the second command and CLIENT_IP_ADDRESS to the client ip address that you want to allow traffic which the student can see on the right side.
-
-13. Press “ENTER’ to observe the simulation.
-
-14. Repeat these steps for eight packets.
-
-15. Click “Verify Rules”.
-16. If the “correct” rules are written by the student, the simulation will result in a “Well Done” alert box. If the rules are wrongly written, the student is asked to repeat the simulation.
+8. Note that we are only dealing with tcp packets in this experiment. Hence, tcp is always used in the above commands. In the commands, allow-packet and block-packet are the names of the access lists that you want to modify, these are existing access lists, creation of new access-list is restricted for this experiment. The SERVER_IP_ADDRESS is the IP address of the server and the CLIENT_IP_ADDRESS is the client IP address from which you want to block traffic, refer to the packet list to find the IP address numbers and the output of the second step to find the IP address of the server.
