@@ -1,1 +1,1 @@
-## To understand intrusion prevention systems- Firewall 
+## To understand intrusion detection systems- Firewall 
