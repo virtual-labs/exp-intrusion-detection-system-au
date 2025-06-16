@@ -31,4 +31,5 @@ SrNo | Name | Faculty or Student | Department| Institute | Email id
 1 | Nirmal Karthikeyan | Student | Computer Science and Engineering | Amrita Vishwa Vidyapeetham | nirmalkarthikeyan1503@gmail.com
 2 | Soorya S Rajan | Student | Computer Science and Engineering | Amrita Vishwa Vidyapeetham  | soorya.s27@gmail.com
 3 | Nitin Ravi | Student | Computer Science and Engineering | Amrita Vishwa Vidyapeetham  | nitinravi18@gmail.com
+4 | Ashwin Narayanan S | Student | Computer Science and Engineering | Amrita Vishwa Vidyapeetham | ashrockzzz2003@gmail.com
 

@@ -1,24 +1,26 @@
 ### Procedure
 
-1. In this experiment, you will learn how to configure a firewall to block traffic from specific IP address that is sending malicious packets to a server.
+1. In this experiment, you will learn how to configure a firewall to block malicious traffic from a specific IP address.
 
-2. Enter the configuration mode of the firewall by typing the following command:
-    - configure terminal
+2. Enter the firewall's configuration mode:
+    - `configure terminal`
 
-3. Get the interface information of the server which is in interface. Try to find the IP address of the server using the following command:
-    - show interface INTERFACE_NAME
+3. Find the IP address of the server, which you'll need for the firewall rules. Replace `INTERFACE_NAME` with the correct interface name.
+    - `show interface INTERFACE_NAME`
 
-4. Access lists are a set of rules that are used to filter traffic. They are used to control the traffic that is allowed to pass through a router or a firewall. Access lists are used to filter traffic based on the source and destination IP addresses, source and destination ports, and protocol type. In this experiment, you will be using access lists to block traffic from specific ports from a server to a client.
+4. You will be using access lists to filter traffic. Access lists are rule sets that control traffic based on details like IP addresses and ports. View the existing access lists with:
+    - `show access-lists`
 
-5. Get the access list information of the firewall using the following command:
-    - show access-lists
+5. To the right, you'll see a list of incoming TCP packets. Examine them for malicious content (e.g., SQL injection, XSS, or scripts). Your task is to block packets from malicious IP addresses.
 
-6. Access lists are a set of rules that are used to filter traffic. Modify the access list to block and allow traffic from specific ports from a server to a client. Towards the right side of this experiment you will see a list of packets. The packets are sent from a client to a server. The packets hold an IP address and it's packet content. Click on the packet to view the complete packet content and decide which packets to block and allow based on the packet content. Malicious packets usually hold SQL Injection code or XSS scripts or Bash Scripts. You can block these packets by blocking the IP Address from which the packets are sent. Use the below commands to do so.
+6. Use the following commands to modify the `allow-packet` and `block-packet` access lists. In these commands:
+    - `CLIENT_IP_ADDRESS` is the source IP from the packet list.
+    - `SERVER_IP_ADDRESS` is the destination IP you found in step 3.
 
-Use the following command to block traffic of tcp packets from a specific Client IP Address to the server:
-    - access-list block-packet deny tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS
+    Use this command to **block** a malicious client:
+    - `access-list block-packet deny tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS`
 
-7. Use the following command to allow traffic of tcp packets from a specific port to the server:
-    - access-list allow-packet allow tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS
+    Use this command to **allow** a client:
+    - `access-list allow-packet allow tcp CLIENT_IP_ADDRESS host SERVER_IP_ADDRESS`
 
-8. Note that we are only dealing with tcp packets in this experiment. Hence, tcp is always used in the above commands. In the commands, allow-packet and block-packet are the names of the access lists that you want to modify, these are existing access lists, creation of new access-list is restricted for this experiment. The SERVER_IP_ADDRESS is the IP address of the server and the CLIENT_IP_ADDRESS is the client IP address from which you want to block traffic, refer to the packet list to find the IP address numbers and the output of the second step to find the IP address of the server.
+7. **Note**: This experiment only deals with TCP packets and modifying existing access lists. You do not need to create new ones.

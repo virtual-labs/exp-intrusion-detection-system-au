@@ -10,3 +10,4 @@
 | 1 | Nirmal Karthikeyan | nirmalkarthikeyan1503@gmail.com | Amrita Vishwa Vidyapeetham | @cyberwizard1001 |
 | 2 | Nitin Ravi | nitinravi18@gmail.com | Amrita Vishwa Vidyapeetham | @nitinravi18 |
 | 3 | Soorya S Rajan | soorya.s27@gmail.com | Amrita Vishwa Vidyapeetham | @SooryaSRajan |
+| 4 | Ashwin Narayanan S | ashrockzzz2003@gmail.com | Amrita Vishwa Vidyapeetham | @Ashrockzzz2003 |
