@@ -2,36 +2,37 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The attack that a firewall can protect against is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+          "a": "Phishing", 
+          "b": "Dumpster diving",  
+          "c": "Denial of Service",            
+          "d": "Shoulder surfing" 
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is a limitation of a firewall-based IPS? ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+          "a": "Inability to block all known attacks.", 
+          "b": "Inability to detect new attacks.",
+          "c": "Inability to monitor network traffic.",         
+          "d": "Inability to identify and block unauthorized access"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+     "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What type of firewall-based IPS can monitor traffic for attacks based on known signatures and can be updated with new signatures as needed? ",
+      "answers": {
+          "a": "Behaviour-based IPS", 
+          "b": "Anomaly-based IPS", 
+          "c": "Signature-based IPS", 
+          "d": "Hybrid IPS" 
       },
+       
       "correctAnswer": "c",
       "difficulty": "beginner"
     }
