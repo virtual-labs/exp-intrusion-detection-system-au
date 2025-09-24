@@ -1,4 +1,3 @@
-### Procedure
 
 1. In this experiment, you will learn how to configure a firewall to block malicious traffic from a specific IP address.
 

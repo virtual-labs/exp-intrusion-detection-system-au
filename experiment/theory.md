@@ -1,4 +1,3 @@
-### Theory
 
 Intrusion Detection Systems (IDS) are security devices that monitor network traffic for signs of malicious activity and report on them. An IDS analyzes network traffic in real-time, using various techniques to identify attacks. For example, some systems like **Cisco's Firepower** can operate in IDS mode, using a combination of signature-based detection for known threats and machine learning to identify novel attacks. Open-source solutions like **Suricata** and **Snort** are popular IDS tools that employ both signature-based and anomaly-detection techniques to spot unusual traffic behavior. By identifying threats such as malware, DDoS attacks, and vulnerability exploits, an IDS provides visibility into security threats against the network. They can be deployed at the network perimeter, in the data center, or on individual endpoints to monitor traffic.
 
