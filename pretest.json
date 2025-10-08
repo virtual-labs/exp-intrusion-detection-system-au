@@ -1,0 +1,43 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The layer at which a packet filter firewall can be filtered packets is __________ ",
+      "answers": {
+          "a": "Physical",  
+          "b": "Data link",  
+          "c": "Network",           
+          "d" :"Application"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The firewall type that is connected in the middle of the computer and the network linking to the internet is ____________ ",
+      "answers": {
+          "a": "Hardware Firewall", 
+          "b": "Software Firewall", 
+          "c": "Stateful Inspection Firewall",     
+          "d": "Microsoft Firewall"
+      },
+     "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "_________ is analyzed by a firewall.",
+      "answers": {
+          "a": "emails user", 
+
+          "b": "switch", 
+          
+          "c": "connection", 
+          
+          "d": "data packet"
+      },
+       
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}
